@@ -1,5 +1,7 @@
 package com.linechen.daggerdemo.module;
 
+import com.linechen.daggerdemo.view.IAppView1;
+import com.linechen.daggerdemo.view.IMainView2;
 import com.linechen.daggerdemo.view.MainView;
 
 import dagger.Module;
@@ -20,5 +22,10 @@ public class MainModule {
     @Provides
     MainView provideMainView(){
         return view;
+    }
+
+    @Provides
+    IMainView2 provideMainView2(IAppView1 appView1){
+        return new IMainView2(appView1);
     }
 }

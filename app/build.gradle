@@ -35,4 +35,8 @@ dependencies {
     //java注解
     compile 'org.glassfish:javax.annotation:10.0-b28'
 
+    compile 'com.zhy:okhttputils:2.6.2'
+
+    compile 'com.orhanobut:logger:2.1.1'
+
 }
